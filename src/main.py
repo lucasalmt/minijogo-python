@@ -5,10 +5,10 @@ rounds_played = 0
 
 while True:
     
-    options = ["rock", "paper", "scissors"]
+    options = ["pedra", "papel", "tesoura"]
 
     # Solicita a entrada do jogador e a converte para letras minúsculas para garantir a consistência.
-    player_choice = input("Escolha uma opção (rock, paper, scissors): ").lower()
+    player_choice = input("Escolha uma opção (pedra, papel, tesoura): ").lower()
 
     # Verifica se a escolha do jogador é uma das opções válidas,
     # se não for, informa o usuário e pula para a próxima iteração do loop.
@@ -27,9 +27,9 @@ while True:
     if player_choice == computer_choice:
         print("É um empate!")
     # Casos em que o jogador vence.
-    elif (player_choice == "rock" and computer_choice == "scissors") or \
-         (player_choice == "scissors" and computer_choice == "paper") or \
-         (player_choice == "paper" and computer_choice == "rock"):
+    elif (player_choice == "pedra" and computer_choice == "tesoura") or \
+         (player_choice == "tesoura" and computer_choice == "papel") or \
+         (player_choice == "papel" and computer_choice == "pedra"):
         print("Você venceu a rodada!")
         # Incrementa a pontuação do jogador se ele vencer.
         player_score += 1
